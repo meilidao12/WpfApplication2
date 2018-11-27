@@ -1,0 +1,43 @@
+﻿<Page x:Class="WpfApplication2.Pages.UDPTest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="UDPTest">
+
+    <Grid>
+        <TabControl Background="LightGreen">
+            <TabItem Header="UDPServer">
+                <Grid>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="接收" Margin="0,5"></TextBlock>
+                        <TextBox Height="100" Name="txtServerReceive"></TextBox>
+                        <TextBlock Text="发送" Margin="0,5"></TextBlock>
+                        <TextBox Height="100" Name="txtServerSend"></TextBox>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                            <Button Name="btnServerListen" Click="btnServerListen_Click" Padding="10,5">侦听</Button>
+                            <Button Name="btnServerDisContect" Click="btnServerDisContect_Click" Padding="10,5" Margin="10,0">断开</Button>
+                            <Button Name="btnServerSend" Click="btnServerSend_Click" Padding="10,5">发送</Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="UDPClient">
+                <Grid>
+                    <StackPanel Margin="5">
+                        <TextBlock Text="接收" Margin="0,5"></TextBlock>
+                        <TextBox Height="100" Name="txtClientReceive"></TextBox>
+                        <TextBlock Text="发送" Margin="0,5"></TextBlock>
+                        <TextBox Height="100" Name="txtClientSend"></TextBox>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+                            <Button Name="btnClientSend" Click="btnClientSend_Click" Padding="10,5">发送</Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl> 
+    </Grid>
+</Page>

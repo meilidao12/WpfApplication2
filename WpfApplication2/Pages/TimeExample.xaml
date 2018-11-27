@@ -1,0 +1,14 @@
+﻿<Page x:Class="WpfApplication2.Pages.TimeExample"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApplication2.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="TimeExample">
+
+    <StackPanel>
+        <Button Click="Button_Click">转换</Button>
+    </StackPanel>
+</Page>
