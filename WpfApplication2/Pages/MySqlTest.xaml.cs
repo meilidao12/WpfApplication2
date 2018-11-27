@@ -29,6 +29,7 @@ namespace WpfApplication2.Pages
 
         /// <summary>
         /// 初始化
+        /// 初始化1
         /// </summary>
         public MySqlTest()
         {
