@@ -27,6 +27,9 @@ namespace WpfApplication2.Pages
         MysqlHelper mysqlHelper1 = new MysqlHelper();
         System.Timers.Timer timer;
 
+        /// <summary>
+        /// 初始化
+        /// </summary>
         public MySqlTest()
         {
             InitializeComponent();
