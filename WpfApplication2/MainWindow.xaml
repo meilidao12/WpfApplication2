@@ -23,6 +23,7 @@
             <Button Tag="/Pages/UDPTest.xaml">测试UDP协议</Button>
             <Button Tag="/Pages/DockPanel.xaml">面板测试</Button>
             <Button Tag="/Pages/ModbusTcpExample.xaml">ModbusTcp</Button>
+            <Button Tag="/Pages/Log.xaml">Log</Button>
         </StackPanel>
         <Frame Name="frm" Grid.Column="1" NavigationUIVisibility="Hidden" Width="400" ></Frame>
     </Grid>

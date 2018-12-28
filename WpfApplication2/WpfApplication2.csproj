@@ -80,6 +80,9 @@
     <Compile Include="Pages\JinMaTest.xaml.cs">
       <DependentUpon>JinMaTest.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Log.xaml.cs">
+      <DependentUpon>Log.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ModbusTcpExample.xaml.cs">
       <DependentUpon>ModbusTcpExample.xaml</DependentUpon>
     </Compile>
@@ -125,6 +128,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\JinMaTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Log.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
