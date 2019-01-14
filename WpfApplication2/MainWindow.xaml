@@ -24,6 +24,8 @@
             <Button Tag="/Pages/DockPanel.xaml">面板测试</Button>
             <Button Tag="/Pages/ModbusTcpExample.xaml">ModbusTcp</Button>
             <Button Tag="/Pages/Log.xaml">Log</Button>
+            <Button Tag="/Pages/TestString.xaml">测试字符串</Button>
+            <Button Tag="/Pages/Access.xaml">测试Access</Button>
         </StackPanel>
         <Frame Name="frm" Grid.Column="1" NavigationUIVisibility="Hidden" Width="400" ></Frame>
     </Grid>

@@ -58,7 +58,7 @@ namespace Services.DataBase
             }
             catch (Exception ex)
             {
-                Error = ex.Message;
+                SimpleLogHelper.Instance.WriteLog(LogType.Error, ex);
                 return false;
             }
         }

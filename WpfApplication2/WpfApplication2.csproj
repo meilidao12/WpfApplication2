@@ -68,6 +68,9 @@
     <Compile Include="Models\MySqlModel.cs" />
     <Compile Include="Models\LeiJiModel.cs" />
     <Compile Include="Models\JiaModel.cs" />
+    <Compile Include="Pages\Access.xaml.cs">
+      <DependentUpon>Access.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DockPanel.xaml.cs">
       <DependentUpon>DockPanel.xaml</DependentUpon>
     </Compile>
@@ -95,6 +98,9 @@
     <Compile Include="Pages\SqlInserTable.xaml.cs">
       <DependentUpon>SqlInserTable.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\TestString.xaml.cs">
+      <DependentUpon>TestString.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\TimeExample.xaml.cs">
       <DependentUpon>TimeExample.xaml</DependentUpon>
     </Compile>
@@ -115,6 +121,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Access.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DockPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -148,6 +158,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SqlInserTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TestString.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
