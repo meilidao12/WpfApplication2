@@ -71,6 +71,9 @@
     <Compile Include="Pages\Access.xaml.cs">
       <DependentUpon>Access.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AsyncTest.xaml.cs">
+      <DependentUpon>AsyncTest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DockPanel.xaml.cs">
       <DependentUpon>DockPanel.xaml</DependentUpon>
     </Compile>
@@ -122,6 +125,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Pages\Access.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AsyncTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

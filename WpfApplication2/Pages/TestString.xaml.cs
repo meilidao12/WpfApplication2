@@ -11,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Services;
 namespace WpfApplication2.Pages
 {
     /// <summary>
@@ -27,8 +27,16 @@ namespace WpfApplication2.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Console.WriteLine(this.txt.Text.Length);
-            Console.WriteLine(this.txt.Text.Substring(832, 12));
-            Console.WriteLine(this.txt.Text.Substring(80, 10));
+            //Console.WriteLine(this.txt.Text.Substring(832, 12));
+
+            //Console.WriteLine(this.txt.Text.Substring(838, 4));
+            //Console.WriteLine(this.txt.Text.Substring(878, 10));
+            MathHelper mathHelper = new MathHelper();
+            string a = "01F8";
+            int b = MathHelper.HexToDec(a);
+            byte c = 127;
+            byte d = (byte)(c & b);
+            Console.WriteLine(d);
         }
     }
 }

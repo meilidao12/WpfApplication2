@@ -41,12 +41,12 @@ namespace WpfApplication2.Pages
             //AccessHelper accessHelper = new AccessHelper();
             //DataTable dt = accessHelper.GetDataTable("Select * from Hello1");
             Thread td = new Thread(() => {
-                SqlHelper sql = new SqlHelper();
-                DataTable dt = sql.GetDataTable1("Select TOP 200 * from YanGangFlowHistoryRecord");
+                AccessHelper sql = new AccessHelper();
+                DataTable dt = sql.GetDataTable("Select * from model");
                 //---
-                ex.Open(Helper.GetCurrentUri + @"\Excel\Hello.xlsx");
+                ex.Open(Helper.GetCurrentUri + @"\Hello.xlsx");
                 ex.InsertTable(dt, "Sheet1", 2, 1);
-                ex.SaveAs(@"C:\Users\MrGao\Desktop\excel\" + string.Format("{0:yyMMdd HHmmss}", DateTime.Now) + ".xlsx");
+                ex.SaveAs(@"D:\" + string.Format("{0:yyMMdd HHmmss}", DateTime.Now) + ".xlsx");
                 ex.Close();
                 Dispatcher.Invoke(new Action(() =>
                 {

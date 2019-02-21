@@ -61,25 +61,32 @@ namespace Services
         }
 
         #region --- 插入数据表格
-        public void InsertTable(System.Data.DataTable dt, string ws, int startX, int startY)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <param name="ws">Sheet1 或 Sheet2</param>
+        /// <param name="startY">起始行</param>
+        /// <param name="startX">起始列</param>
+        public void InsertTable(System.Data.DataTable dt, string ws, int startY, int startX)
         {
 
             for (int i = 0; i <= dt.Rows.Count - 1; i++)
             {
                 for (int j = 0; j <= dt.Columns.Count - 1; j++)
                 {
-                    GetSheet(ws).Cells[startX + i, j + startY] = dt.Rows[i][j].ToString();
+                    GetSheet(ws).Cells[startY + i, j + startX] = dt.Rows[i][j].ToString();
                 }
             }
         }
-        public void InsertTable(System.Data.DataTable dt, Microsoft.Office.Interop.Excel.Worksheet ws, int startX, int startY)
+        public void InsertTable(System.Data.DataTable dt, Microsoft.Office.Interop.Excel.Worksheet ws, int startY, int startX)
         {
 
             for (int i = 0; i <= dt.Rows.Count - 1; i++)
             {
                 for (int j = 0; j <= dt.Columns.Count - 1; j++)
                 {
-                    ws.Cells[startX + i, j + startY] = dt.Rows[i][j];
+                    ws.Cells[startY + i, j + startX] = dt.Rows[i][j];
                 }
             }
         }
@@ -96,7 +103,8 @@ namespace Services
             {
                 try
                 {
-                    Wb.SaveAs(path, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing
+                    App.AlertBeforeOverwriting = false;
+                    Wb.SaveAs(path, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange, Type.Missing, Type.Missing, Type.Missing
                         , Type.Missing, Type.Missing);
                     return true;
                 }

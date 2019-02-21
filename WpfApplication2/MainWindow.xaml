@@ -26,6 +26,7 @@
             <Button Tag="/Pages/Log.xaml">Log</Button>
             <Button Tag="/Pages/TestString.xaml">测试字符串</Button>
             <Button Tag="/Pages/Access.xaml">测试Access</Button>
+            <Button Tag="/Pages/AsyncTest.xaml">异步调用</Button>
         </StackPanel>
         <Frame Name="frm" Grid.Column="1" NavigationUIVisibility="Hidden" Width="400" ></Frame>
     </Grid>
